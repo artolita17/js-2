@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="author" name="Arturo Olita Jr.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Javascript 2</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Javascript Web Output #2</h1>
+    <table id="tableInput">
+        <tr>
+            <td width="45%">
+                <label for="txtFirstName">First Name:</label>
+            </td>
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+        <tr>
+            <td width="45%">
+                <label for="txtMiddleName">Middle Name:</label>
+            </td>
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+        <tr>
+            <td width="45%">
+                <label for="txtLastName">Last Name:</label>
+            </td>
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="txtAge">Age:</label>
+            </td>
+            <td>
+                <input type="number">
+            </td>
+        </tr>
+
+        <tr style="height:20px;">
+            <td></td>
+            <td style="padding-top: 15px;">
+                <button id="btnInsertUpdate" value="insert">Insert</button>
+                <button id="btnClearFields">Clear</button>
+            </td>
+        </tr>
+    </table>
+    <br>
+
+    <fieldset>
+        <legend>Records</legend>
+        <p id="status" style="color:rgba(149, 149, 149, 0.404); font-size: 12px;"></p>
+        <table id="tableRecords" style="border-collapse: collapse; margin: auto;">
+        </table>
+    </fieldset>
+    <div>
+        <button id="btnClearRecords" style="margin-top: 10px;">Clear Records</button>
+   
+        <label for="sortCriteria">Sort by:</label>
+        <select id="sortCriteriaDropdown">
+            <option value="">  </option>
+            <option value="fname">First Name</option>
+            <option value="lname">Last Name</option>
+        </select>
+        <select id="sortOrderDropdown">
+            <option value="">  </option>
+            <option value="asc">A-Z</option>
+            <option value="desc">Z-A</option>
+        </select>
+        <button id="btnSaveData" style="margin-top: 10px;">Save to Local Storage</button>
+    </div>
+    <script defer src="main.js"></script>
+</body>
+</html>
